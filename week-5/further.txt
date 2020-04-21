@@ -1,0 +1,14 @@
+Speeding up the sound using resampling raises the pitch and leads to the Chipmunk effect. More sophisticated time stretching techniques are preferred in practice (such as when watching Coursera videos at 1.5× or 2× speed) because they change the speed but not the pitch.
+Which other audio effects might I want to implement?
+clamp: round all samples greater than +1 to +1; round all samples less than –1 to –1.
+normalize: rescale a sound so that all values are between –1 and +1.
+cut: extract a contiguous subarray from a given sound.
+trim: remove leading / trailing sequence of samples that are 0 (or nearly 0).
+loop: repeat a given sound a specified number of times.
+mirror: concatenate a sound with its reverse.
+hip–hop: increase speed of a sound; mirror it; then loop it.
+echo, delay, reverb: add a time-delayed version of a sound to itself, attenuated by a given factor.
+fade-in, fade-out: gradually increase/decrease the volume at the beginning/end of a sound.
+crossfade: fade-out first sound; fade-in second sound; overlap.
+tremolo: create a trembling effect by modulating the amplitude up and down.
+You could also synthesize your own sounds by creating a sine wave, square wave, triangle wave, or sawtooth wave of a given amplitude, frequency, and duration.
